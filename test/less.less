@@ -1,0 +1,63 @@
+/* Zmienne */
+
+@f4f4f4: #f4f4f4;
+@c3c6c5: #c3c6c5;
+@ededed: #ededed;
+@broder-color: #B6B6B3;
+@padding: 0.2rem 0.4rem;
+@max-width: 768px;
+
+.gtkHeaderBar {
+    background-color: @f4f4f4;
+    background-image: unset;
+  }
+.bg-gradiend{
+    background-image: linear-gradient(180deg, @ededed, @c3c6c5);
+}
+
+.simple-border{
+    border-style: solid;
+    border-color: @broder-color;
+    border-width: 1px;
+}
+
+.borderedBtns {
+    background-color: @c3c6c5;
+    .bg-gradiend();
+    .simple-border();
+  }
+
+  .gtkBtn,
+  .gtkButton {
+    .borderedBtns();
+    border-bottom: solid 1px #91918c;
+    border-radius: 0.3rem;
+  }
+section{
+    code{
+        .borderedBtns();
+        background: #e5e8e7;
+        padding: @padding;
+    }
+    .codeBlock{
+        p > code{
+            .borderedBtns();
+            background-color: @f4f4f4;
+            padding: @padding;
+        }
+    }
+}
+
+.gtkInfoBar {
+    & + .gtkBox {
+        position: relative;
+    }
+    
+  }
+  .gtkBox{
+     &.aside {
+    opacity: 0.5;
+    width: 20%;
+  } 
+  }
+  

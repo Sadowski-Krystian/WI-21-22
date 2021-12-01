@@ -1,0 +1,353 @@
+/*
+Theme_Name: Vaculik racing theme
+Theme URI: google.com
+Description: cool theme
+Version: 1.0
+Author: Sadowski Krystian
+
+*/
+
+@import url("css/foundation.css");
+.my-slider {
+    background-image: url(images/hero-bg.jpg);
+    height: 1000px;
+    width: 100%;
+    margin: 0%;
+    background-attachment: fixed;
+}
+
+.my-card {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.my-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.my-flag {
+    height: 15px;
+    width: 21px;
+}
+
+.my-card h4, img {
+    display: inline-block;
+}
+
+.my-card img {
+    margin-right: 5px;
+}
+
+.my-miejsce {
+    font-size: 75px;
+}
+
+.ms-name {
+    font-size: 30px;
+}
+
+.my-card div {
+    text-align: center;
+}
+
+.my-hover {
+    filter: brightness(30%);
+    transition: 900ms;
+    box-sizing: border-box;
+}
+
+.my-hover:hover {
+    filter: brightness(80%);
+    transition: 800ms;
+}
+
+.my-hover h2 {
+    filter: brightness(100%);
+}
+
+.my-sponsor {
+    height: 50px;
+}
+
+.my-hover:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+.parent {
+    overflow: hidden;
+}
+
+.my-galery-hover:hover {
+    box-shadow: 16px 0 16px 0 rgba(251, 255, 0, 0.479);
+}
+
+.bg-hover {
+    transition: 900ms;
+}
+
+.bg-hover:hover {
+    transform: scale(1.05);
+}
+
+.btn-my-hover {
+    transition: 900ms;
+}
+
+.btn-my-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.parent img {
+    transition: 900ms;
+}
+
+.parent img:hover {
+    transform: scale(1.1);
+}
+
+.my-reed-more:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.493);
+}
+
+.my-shop {
+    transition: 900ms;
+}
+
+.my-shop:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+    .my-article-hedder {
+        height: 220px !important;
+    }
+    .my-article-content {
+        height: 230px !important;
+    }
+    .sponsors {
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tel {
+        margin-left: 30px;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse !important;
+    }
+}
+
+.my-shop-hedder {
+    height: 100px !important;
+    display: flex;
+}
+
+.my-shop-img {
+    height: 370px !important;
+    display: flex;
+    justify-content: center;
+}
+
+#my-nav, #my-nav-small {
+    position: fixed;
+    /* Make it stick/fixed */
+    top: 0;
+    /* Stay on top */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-duration: 0.6s;
+}
+/*
+#my-nav-small {
+    position: fixed;
+    // Make it stick/fixed 
+    top: 0;
+    // Stay on top 
+    width: 100%;
+    // Full width 
+    transition: top 0.3s;
+    // Transition effect when sliding down (and up) 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-duration: 0.6s;
+}
+*/
+@keyframes transparent {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+.slideshow-container {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* Slides */
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 7s;
+}
+
+.fade-background {
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-name: fade-background;
+    animation-duration: 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* @keyframes fade-background {
+    0% {left: -1000px;}
+
+    30% {left: 0px;}
+    40% {left: 0px;}
+    50% {left: 0px;}
+    60% {left: 0px;}
+    70% {left: 0px;}
+
+    100% {left: 1000px;}
+  }*/
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.slide-menu {
+    margin-top: 10px;
+}
+
+.slides-menu {
+    transition: 0.4s;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.menu ul li::marker {
+    color: transparent;
+}
+
+.menu li a {
+    transition: 0.3s;
+}
+
+.sponsors img {
+    margin: 10px;
+    margin: 10px;
+}
+
+.bar1, .bar2, .bar3 {
+    margin: 6px 0;
+    transition: 0.4s;
+    width: 35px;
+    height: 5px;
+    background-color: #818181;
+    margin: 6px 0;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.my-about-me {
+    background-image: url(wp-includes/images/about-me-bg);
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+}
+
+#my-nav a img, #my-nav-small a img {
+    height: 75px;
+    width: 75px;
+    margin-top: 15px;
+    margin-left: 15px
+}
+/*
+#my-nav-small a img {
+    height: 75px;
+    width: 75px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+*/
+.copyright a {
+    cursor: pointer;
+    pointer-events: none;
+}

@@ -1,0 +1,84 @@
+.gtkHeaderBar {
+  background-color: #f4f4f4;
+  background-image: unset;
+}
+.borderedBtns {
+  background-color: #c3c6c5;
+  background-image: linear-gradient(180deg, #ededed, #c3c6c5);
+  border-style: solid;
+  border-color: #B6B6B3;
+  border-width: 1px;
+}
+.gtkBtn,
+.gtkButton {
+  background-color: #c3c6c5;
+  background-image: linear-gradient(180deg, #ededed, #c3c6c5);
+  border-style: solid;
+  border-color: #B6B6B3;
+  border-width: 1px;
+  border-bottom: solid 1px #91918c;
+  border-radius: 0.3rem;
+}
+section code {
+  background-color: #c3c6c5;
+  background-image: linear-gradient(180deg, #ededed, #c3c6c5);
+  border-style: solid;
+  border-color: #B6B6B3;
+  border-width: 1px;
+  background: #e5e8e7;
+  padding: 0.2rem 0.4rem;
+}
+section .codeBlock p > code {
+  background-color: #c3c6c5;
+  background-image: linear-gradient(180deg, #ededed, #c3c6c5);
+  border-style: solid;
+  border-color: #B6B6B3;
+  border-width: 1px;
+  background-color: #f4f4f4;
+  padding: 0.2rem 0.4rem;
+}
+.gtkInfoBar + .gtkBox {
+  position: relative;
+}
+.gtkBox.aside {
+  opacity: 0.5;
+  width: 20%;
+}
+@media (max-width: 768px) {
+  .gtkBox.aside {
+    margin-left: -300px !important;
+    opacity: 1;
+    width: 320px;
+  }
+}
+.gtkBox.aside:hover,
+.gtkBox.aside:focus {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .gtkBox.aside:hover,
+  .gtkBox.aside:focus {
+    position: absolute;
+    left: 0.8rem;
+    right: 0.8rem;
+    top: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: unset;
+  }
+  .gtkBox.aside:hover + .gtkBox.main,
+  .gtkBox.aside:focus + .gtkBox.main,
+  .gtkBox.aside:hover + .gtkBox.main,
+  .gtkBox.aside:focus + .gtkBox.main {
+    margin-left: 2.85rem !important;
+  }
+}
+.gtkBox.main {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .gtkBox.main {
+    margin-left: 10%;
+    width: 90%;
+  }
+}
