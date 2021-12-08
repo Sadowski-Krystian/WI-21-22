@@ -1,0 +1,29 @@
+#view{
+    position: relative;
+    height: 240px;
+    width: 320px;
+    overflow: hidden;
+    outline: solid 2px red;
+}
+
+#map{
+    position: absolute;
+    counter-set: no 0;
+    height: 480px;
+    width: 640px;
+    background-color: #c3c6c5;
+    display: grid;
+    grid-template-columns: repeat(var(--sx), 50px);
+    grid-template-rows: repeat(var(--sy), 50px);
+}
+
+#map div{
+    counter-increment: no;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    outline: dotted 1px yellow;
+}
+#map div::before{
+    content: counter(no);
+}
