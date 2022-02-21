@@ -1,0 +1,76 @@
+html {
+    --col-green: #aaf25d;
+   --col-grey: #c3c6c5;
+    --col-dark: #808080;
+   --col-darker: #404040;
+   --ionicon-stroke-width: 42px;
+}
+body {
+   margin: 0;
+}
+header {
+    position: fixed;
+    color: var(--col-green);
+    width: 100%;
+    height: 10vw;
+    background-color: var(--col-dark);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 10vw;
+}
+nav a {
+    color: var(--col-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-decoration: none;
+    font-weight: 800;
+}
+nav a:hover, nav a:focus{
+    color: var(--col-dark);
+    background-color: var(--col-grey);
+}
+nav a:hover > ion-icon, nav a:focus > ion-icon{
+    color: var(--col-grey);
+    background-color: var(--col-dark);
+}
+nav a > ion-icon{
+    color: var(--col-dark);
+    background-color: var(--col-green);
+    border-radius: 50%;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+a.active{
+    color: var(--col-darker);
+    background-color: var(--col-green);
+}
+a.active > ion-icon{
+    color: var(--col-green);
+    background-color: var(--col-darker);
+}
+main > article {
+outline: solid 1px red;
+    height: 75vh;
+    margin: 0;
+}
+main > article:nth-child(odd){
+    background-color: var(--col-green);
+}
+main > article:nth-child(even){
+    background-color: var(--col-grey);
+}
+footer {
+    color: var(--col-green);
+    background-color: var(--col-dark);
+    text-align: center;
+}
+main + footer p{
+    margin: 0;
+}

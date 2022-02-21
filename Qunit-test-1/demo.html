@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tytuł</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="arkusz.css" />
+  <script src="http://lo.local/extJS/mkNode/core.mkNode.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+<article>
+  <section id="top">
+	<div id="workspaceNav">
+	  <a href="#w1" data-sohbtn="workspace" data-sohgroup="workspace" data-sohno="1">1</a>
+	  <a href="#w2" data-sohbtn="workspace" data-sohgroup="workspace" data-sohno="2">2</a>
+	  <a href="#wa" data-sohbtn="workspace" data-sohgroup="workspace" data-sohno="new">+</a>
+	</div>
+	<div class="dropDown">
+	  <a href="#profil" class="menuBtn">@</a>
+	  <ul class="menuItems">
+		<li><a href="#prof">Profil</a></li>
+		<li><a href="#priv">Uprawnienia</a></li>
+		<li><a href="#sett">Ustawienia</a></li>
+	  </ul>
+	</div>
+  </section>
+  <section id="side">
+	<section class="panel hide">
+	  <header>
+		<span data-toggle="sect-menu">
+		  <ion-icon name="chevron-down-outline" size="large"></ion-icon>
+		  <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+		</span>
+		<h2>Pliki</h2>
+		<ion-icon name="document-text-outline" size="large"></ion-icon>
+	  </header>
+	  <div>
+		<a href="#d1">Dokument 1</a>
+		<a href="#d2">Dokument 2</a>
+		<a href="#d3">Obraz 3</a>
+		<a href="#d4">Dokument 4</a>
+		<a href="#d5">Wiadomość 5</a>
+	  </div>
+	</section>
+	<section class="panel">
+	  <header>
+		<span data-toggle="sect-menu">
+		  <ion-icon name="chevron-down-outline" size="large"></ion-icon>
+		  <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+		</span>
+		<h2>Zadania</h2>
+		<ion-icon name="list-outline" size="large"></ion-icon>
+	  </header>
+	  <div>
+		<a href="#z1">Zadanie 1</a>
+		<a href="#z2">Zadanie 2</a>
+		<a href="#z3">Zadanie 3</a>
+		<a href="#z4">Zadanie 4</a>
+		<a href="#z5">Zadanie 5</a>
+	  </div>
+	</section>
+	<section class="panel">
+	  <header>
+		<span data-toggle="sect-menu">
+		  <ion-icon name="chevron-down-outline" size="large"></ion-icon>
+		  <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+		</span>
+		<h2>Zespół</h2>
+		<ion-icon name="people-circle-outline" size="large"></ion-icon>
+	  </header>
+	  <div>
+		<a href="#z1">Grzegorz Z.</a>
+		<a href="#z2">Andrzej X.</a>
+		<a href="#z3">Krzysztof P.</a>
+		<a href="#z4">Martyna R.</a>
+		<a href="#z5">Katarzyna S.</a>
+	  </div>
+	</section>
+  </section>
+  <section id="content">
+    <section data-sohcanv="workspace" data-sohgroup="workspace" data-sohno="1">Body #1</section>
+    <section data-sohcanv="workspace" data-sohgroup="workspace" data-sohno="2">Body #2</section>
+  </section>
+  <section id="footer">
+  <time id="dateTime">
+	<span>10:45</span>
+	<span>2021-12-13</span>
+  </time>
+  <div id="timeline">
+	<a href="#0700">7:00</a>
+	<a href="#0800">8:00</a>
+	<a href="#0900">9:00</a>
+	<a href="#1000">10:00</a>
+	<a href="#1100">11:00</a>
+	<a href="#1200">12:00</a>
+	<a href="#1300">13:00</a>
+	<a href="#1400">14:00</a>
+	<a href="#1500">15:00</a>
+	<a href="#1600">16:00</a>
+	<a href="#1700">17:00</a>
+	<a href="#1800">18:00</a>
+	<a href="#1900">19:00</a>
+	<a href="#2000">20:00</a>
+	<a href="#2100">21:00</a>
+  </div>
+  </section>
+</article>
+<script src="soh.js"></script>
+<script src="workspaces.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

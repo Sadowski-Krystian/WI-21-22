@@ -1,0 +1,203 @@
+:root {
+--side-wid: 155px;
+}
+body {
+	font-family: Lato;
+	font-size: 12px;
+	margin: 0;
+}
+body > article {
+	display: grid;
+	grid-template-areas:
+		"top top"
+		"side body"
+		"btm btm"
+	;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 50px 5fr 100px;
+	/*grid-template-rows: 1fr 5fr 2fr;*/
+	height: 100vh;
+	width: 100vw;
+}
+article > section {
+	outline: solid 1px red;
+}
+#top a {
+	color: #fff;
+}
+#top {
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;	/* pionowo */
+	justify-content: center;/* poziomo */
+	font-weight: 800;
+	grid-area: top;
+	/*max-height: 50px;*/
+}
+#workspaceNav {
+	display: flex;
+	flex-direction: row;
+}
+#workspaceNav a {
+	background-color: #f4f4f4;
+	color: #404040;
+	font-size: 1.4rem;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 .25rem;
+	line-height: 2rem;
+	height: 2rem;
+	width: 80px;
+}
+#workspaceNav a[data-active="true"],
+#workspaceNav a:hover,
+#workspaceNav a:focus {
+	outline: solid 2px aqua;
+}
+.dropDown {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 140px;
+}
+.dropDown a {
+	display: block;
+	font-size: 2rem;
+	text-decoration: none;
+	line-height: 2rem;
+	text-align: right;
+}
+.dropDown a + .menuItems {
+	background-color: #000;
+	border: solid 2px #808080;
+	border-radius: 7px;
+	display: none;
+	margin: 0;
+	padding: .5rem 0;
+	/*padding-left: 0;*/
+	list-style-type: none;
+}
+.dropDown a + .menuItems a {
+	font-size: 1.2rem;
+	padding: 0 .5rem;
+}
+.dropDown a + .menuItems a:hover,
+.dropDown a + .menuItems a:focus {
+	background-color: #808080;
+}
+.dropDown:hover a + .menuItems {
+	display: block;
+	position: relative;
+	z-index: 10;
+}
+#side {
+	grid-area: side;
+	width: 20vw;
+	min-width: var(--side-wid);
+	display: flex;
+	flex-direction: column;
+}
+#side section.panel {
+	flex-basis: content;
+	flex-grow: 0;
+}
+#side section.hide ion-icon[name^=chevron-down] {
+	display: none;
+}
+#side section.hide > div {
+	display: none;
+}
+#side section.hide ion-icon[name^=chevron-forward] {
+	display: initial;
+}
+#side section ion-icon[name^=chevron-forward] {
+	display: none;
+}
+#side header {
+	background-color: #c3c6c5;
+	border-bottom: dashed 1px #808080;
+	display: flex;
+	align-items: center;
+	height: 2.6rem;
+}
+#side header > h2 {
+	margin: 0;
+	padding: .5rem 0;
+	flex-grow: 2;
+	text-align: center;
+}
+#side header ion-icon:last-child {
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+#side > section > div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#side div > a {
+	height: 2rem;
+	justify-content: center;
+	outline: dashed 1px blue;
+}
+#content {
+	grid-area: body;
+}
+[data-sohcanv] {
+	display: none;
+}
+[data-sohcanv][data-active="true"] {
+	display: initial;
+}
+#footer {
+	grid-area: btm;
+	display: flex;
+	flex-direction: row;
+	/*max-height: 100px;*/
+}
+#dateTime {
+	background-color: #c3c6c5;
+	display: flex;
+	flex-direction: column;
+	font-size: 3rem;
+	font-weight: 800;
+	min-width: var(--side-wid);
+	width: 20vw;
+}
+#dateTime span {
+	display: flex;
+	font-size: 2rem;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+#dateTime span:first-child {
+	font-size: 3rem;
+}
+#timeline {
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	height: 100%;
+	width: 80vw;
+}
+#timeline a {
+	/*outline: dashed 1px red;*/
+	display: flex;
+	flex-grow: 1;
+	align-items: center;	/* pionowo */
+	justify-content: center;/* poziomo */
+	padding: 1rem .5rem;
+}
+#timeline a:nth-child(odd) {
+	background-color: #f4f4f4;
+	align-items: flex-end;
+}
+#timeline a:nth-child(even) {
+	background-color: #c3c6c5;
+	align-items: flex-start;
+}

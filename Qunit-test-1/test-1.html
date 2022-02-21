@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>APERTURE SCIENCE Test Environment</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.14.0.css">
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.14.0.js"></script>
+    <script>
+  const isItaLie = (what) => 'the '+what+' is a Lie';
+  QUnit.module('isItaLie', function() {
+    QUnit.test('should tell if IT is a Lie', function(assert) {
+      assert.equal(isItaLie('fake'), 'the cake is a Lie', 'msg');
+    });
+    QUnit.test('should tell if IT is a Lie', function(assert) {
+      assert.equal(isItaLie('cake'), 'the cake is a Lie', 'msg');
+    });
+  });
+</script>
+
+</body>
+</html>
