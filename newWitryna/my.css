@@ -8,44 +8,6 @@ html {
 body {
    margin: 0;
 }
-header {
-    position: fixed;
-    color: var(--col-green);
-    width: 100%;
-    height: 10vw;
-    background-color: var(--col-dark);
-}
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    height: 10vw;
-}
-nav a {
-    color: var(--col-green);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    text-decoration: none;
-    font-weight: 800;
-}
-nav a:hover, nav a:focus{
-    color: var(--col-dark);
-    background-color: var(--col-grey);
-}
-nav a:hover > ion-icon, nav a:focus > ion-icon{
-    color: var(--col-grey);
-    background-color: var(--col-dark);
-}
-nav a > ion-icon{
-    color: var(--col-dark);
-    background-color: var(--col-green);
-    border-radius: 50%;
-    padding: .5rem;
-    margin: 1rem;
-}
 
 a.active{
     color: var(--col-darker);
@@ -73,4 +35,83 @@ footer {
 }
 main + footer p{
     margin: 0;
+}
+.stp2{
+    overflow-x: scroll;
+}
+.stp2 table{
+    width: 1000px;
+}
+@media screen and (max-width: 750px) {
+    header {
+        position: fixed;
+        color: var(--col-green);
+        width: 100%;
+        height: 5vw;
+        background-color: var(--col-dark);
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: 5vw;
+    }
+    nav a {
+        color: var(--col-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        text-decoration: none;
+        font-weight: 400;
+    }
+    nav a:hover, nav a:focus{
+        color: var(--col-dark);
+        background-color: var(--col-grey);
+    }
+    nav a > ion-icon{
+        display:  none;
+    }
+}
+@media screen and (min-width: 750px) {
+    header {
+        position: fixed;
+        color: var(--col-green);
+        width: 100%;
+        height: 10vw;
+        background-color: var(--col-dark);
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: 10vw;
+    }
+    nav a {
+        color: var(--col-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        text-decoration: none;
+        font-weight: 800;
+    }
+    nav a:hover, nav a:focus{
+        color: var(--col-dark);
+        background-color: var(--col-grey);
+    }
+    nav a:hover > ion-icon, nav a:focus > ion-icon{
+        color: var(--col-grey);
+        background-color: var(--col-dark);
+    }
+    nav a > ion-icon{
+        color: var(--col-dark);
+        background-color: var(--col-green);
+        border-radius: 50%;
+        padding: .5rem;
+        margin: 1rem;
+    }
+    
 }

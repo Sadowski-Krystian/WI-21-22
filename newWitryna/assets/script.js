@@ -37,5 +37,16 @@ const soh ={
         console.log('soh');
     }
 }
-
+const mystyle ={
+    changeTheme: ()=>{
+        let link = document.getElementById('pagestyle')
+        if(link.getAttribute('href')=="tablestyle_1.css"){
+            link.setAttribute('href', 'tablestyle_2.css');
+        }else{
+            link.setAttribute('href', 'tablestyle_1.css');
+        }
+    }
+}
 window.addEventListener('load', soh.init,false)
+document.getElementById('theme').addEventListener('click', mystyle.changeTheme,false)
+

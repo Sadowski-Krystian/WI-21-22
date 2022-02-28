@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="my.css">
+    <link id="pagestyle" rel="stylesheet" href="tablestyle_1.css">
 </head>
 <body>
     <main>
@@ -32,7 +32,34 @@
         </article>
         <article id="offer">
           <h2>0ferta</h2>
-          <p>Treść</p>
+          <div class="stp2">
+            <table>
+              <caption style="border-bottom: double 3px;">Cennik usług serwisowych IT</caption>
+              <tr>
+                <td>1</td><td>Wymiana pamięci RAM</td><td>(z przetestowaniem pamięci)</td><td>50 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td rowspan="2">2</td><td rowspan="2">Instalacja systemu</td><td>Windows</td><td>120 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>Linux</td><td style="display: none;"><td style="display: none;"></td><td>80 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>3</td><td>Integracja Smartfona z systemem Linux</td><td>(w tym przeszkolenie z obsługi)</td><td>100 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>4</td><td>Szkolenie z pracy na komputerze</td><td>(niezależnie od systemu - na każdym panują te same zasady pracy)</td><td rowspan="2">200 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>5</td><td>	Szkolenie z pracy w pakiecie biurowym</td><td>(niezależnie od pakietu biurowego - na każdym panują te same zasady tworzenia dokumentów)</td>
+              </tr>
+              <tr>
+                <td>6</td><td>Nietypowe zlecenia</td><td>(wymaga spisania warunków)</td><td>350 <span><br>PLN</span></td>
+              </tr>
+            </table>
+            <button id="theme">Change theme</button>
+          </div>
+
         </article>
         <article id="media">
           <h2>Media</h2>
