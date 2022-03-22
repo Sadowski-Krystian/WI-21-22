@@ -1,0 +1,43 @@
+nav > *:nth-child(1){order: 1;}
+nav > *:nth-child(2){order: 2;}
+nav > *:nth-child(3){order: 3;}
+.dropdown-bttn{
+    display: unset;
+    background-color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color: #c5c6c3;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+.dropdown:hover > .dropdown-bttn + .dropdown-menu,
+.dropdown > .dropdown-bttn:focus + .dropdown-menu,
+.dropdown > .dropdown-bttn + .dropdown-menu:hover{
+    display: flex;
+}
+.dropdown:hover > .searchBox, .dropdown > .dropdown-bttn:focus + .dropdown-menu + .searchBox{
+    display: unset;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    text-align: center;
+    width: 100%;
+}
+.dropdown-menu > a{
+    font-size: 2rem;
+    margin: .5rem 0;
+    padding: .5rem 0;
+    text-align: center;
+    height: 2rem;
+    width: 80%;
+}
