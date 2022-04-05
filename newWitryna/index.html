@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="pagestyle" rel="stylesheet" href="tablestyle_1.css">
+</head>
+<body>
+    <main>
+    <header>
+        <nav>
+         <a href="#about" class="active">
+      <ion-icon name="home-outline"></ion-icon>
+               O mnie</a>
+         <a href="#offer">
+      <ion-icon name="list-outline"></ion-icon>
+              Oferta</a>
+          <a href="#media">
+      <ion-icon name="images-outline"></ion-icon>
+             Media</a>
+         <a href="#contact">
+      <ion-icon name="heart"></ion-icon>.
+              Kontakt</a>
+        </nav>
+      </header>
+      <main>
+        <article id="about">
+          <h2>0 nas</h2>
+          <p>Treść</p>
+        </article>
+        <article id="offer">
+          <h2>0ferta</h2>
+          <div class="stp2">
+            <table>
+              <caption style="border-bottom: double 3px;">Cennik usług serwisowych IT</caption>
+              <tr>
+                <td>1</td><td>Wymiana pamięci RAM</td><td>(z przetestowaniem pamięci)</td><td>50 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td rowspan="2">2</td><td rowspan="2">Instalacja systemu</td><td>Windows</td><td>120 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>Linux</td><td style="display: none;"><td style="display: none;"></td><td>80 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>3</td><td>Integracja Smartfona z systemem Linux</td><td>(w tym przeszkolenie z obsługi)</td><td>100 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>4</td><td>Szkolenie z pracy na komputerze</td><td>(niezależnie od systemu - na każdym panują te same zasady pracy)</td><td rowspan="2">200 <span><br>PLN</span></td>
+              </tr>
+              <tr>
+                <td>5</td><td>	Szkolenie z pracy w pakiecie biurowym</td><td>(niezależnie od pakietu biurowego - na każdym panują te same zasady tworzenia dokumentów)</td>
+              </tr>
+              <tr>
+                <td>6</td><td>Nietypowe zlecenia</td><td>(wymaga spisania warunków)</td><td>350 <span><br>PLN</span></td>
+              </tr>
+            </table>
+            <button id="theme">Change theme</button>
+          </div>
+
+        </article>
+        <article id="media">
+          <h2>Media</h2>
+          <p>Treść</p>
+        </article>
+        <article id="contact">
+          <h2>Kontakt</h2>
+          <p>Treść</p>
+        </article>
+      </main>
+      <footer>
+        <p>1p </p>
+      </footer>
+      <main>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script src="assets/script.js"></script>
+</body>
+</html>

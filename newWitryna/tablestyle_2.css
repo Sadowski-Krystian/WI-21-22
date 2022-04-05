@@ -1,0 +1,6 @@
+@import "my.css";
+.stp2 td:nth-child(1) { font-style: italic; font-weight: bold; }
+.stp2 td:nth-child(4){ text-align: center; min-width: 100px; font-family: Georgia;}
+.stp2 tr:nth-child(odd) {	background-color: #ffbb00; color: black; }
+.stp2 tr:nth-child(even) {	background-color: #ffff19; color: black; }
+.stp2 span{font-weight: bold; font-family: serif;}
