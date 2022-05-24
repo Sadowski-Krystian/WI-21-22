@@ -1,5 +1,15 @@
-[data-sect]{
+[data-sect],article{
     outline: solid 1px red;
     height: 300px;
     width: 500px;
+    
+}
+[data-sect]{
+    display: none;
+}
+.noDsp {
+    display: none;
+}
+.doDsp{
+    display: initial;
 }
