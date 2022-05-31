@@ -9,13 +9,15 @@
 <body>
     <form action="druzyny.php" method="post">
         <label>Nazwa dróżyny</label><input type="text" name="Dname" id="Dname"><br>
-         <h2>oboba 1</h2>
+        <fieldset>
+         <legend>Osoba 1</legend>
          <label>Nazwisko</label><input type="text" name="nazwisko" id="nazwisko"><br>
          <label>Imie</label><input type="text" name="imie" id="imie"><br>
          <label>Klasa</label><select name="klasa" id="klasa">
              <option value="3pt4">3pt4</option>
              <option value="3pt5">3pt5</option>
          </select>
+</fieldset>
     </form>
     <?php
     $nazwa = (isset($_POST['Dname'])) ? $_POST['Dname'] : null;
